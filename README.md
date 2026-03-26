@@ -40,20 +40,19 @@ locallens/
 
 ## Setup Instructions
 
-1. Clone & activate venv:
-```bash
+1. Clone & activate virtual environment
 git clone <repo_url> && cd locallens
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-Install dependencies:
+venv\Scripts\activate
+
+2. Install dependencies
 pip install -r requirements.txt
-Configure Supabase (URL & Key in backend/app/config.py) and create issues table.
-Run backend:
+
+3. Configure Supabase
+# Set URL & Key in backend/app/config.py and create 'issues' table
+
+ 4. Run backend
 uvicorn app.main:app --reload --port 8000
-Run frontend:
+
+ 5. Run frontend
 streamlit run frontend/app.py
-Features
-Submit issues with title, description, category, and optional image.
-View all reported issues.
-Filter issues by category and status.
-Interactive frontend with auto-refresh.```
