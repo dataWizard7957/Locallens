@@ -49,7 +49,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 3. Configure Supabase
-# Set URL & Key in backend/app/config.py and create 'issues' table
+Set URL & Key in backend/app/config.py and create 'issues' table
 
  4. Run backend
 uvicorn app.main:app --reload --port 8000
